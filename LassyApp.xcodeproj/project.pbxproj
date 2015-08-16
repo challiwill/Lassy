@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		9DACFB5A1B803EC70091EEB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB591B803EC70091EEB8 /* main.m */; };
 		9DACFB5D1B803EC70091EEB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB5C1B803EC70091EEB8 /* AppDelegate.m */; };
-		9DACFB601B803EC70091EEB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB5F1B803EC70091EEB8 /* ViewController.m */; };
-		9DACFB631B803EC70091EEB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DACFB611B803EC70091EEB8 /* Main.storyboard */; };
+		9DACFB601B803EC70091EEB8 /* FriendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB5F1B803EC70091EEB8 /* FriendListController.m */; };
 		9DACFB651B803EC70091EEB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DACFB641B803EC70091EEB8 /* Images.xcassets */; };
 		9DACFB681B803EC70091EEB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DACFB661B803EC70091EEB8 /* LaunchScreen.xib */; };
 		9DACFB741B803EC70091EEB8 /* LassyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB731B803EC70091EEB8 /* LassyAppTests.m */; };
+		9DACFB7F1B8042DC0091EEB8 /* FriendListDataSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB7E1B8042DC0091EEB8 /* FriendListDataSourceDelegate.m */; };
+		9DACFB821B80460B0091EEB8 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB811B80460B0091EEB8 /* Friend.m */; };
+		9DACFB851B80481B0091EEB8 /* BackendClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB841B80481B0091EEB8 /* BackendClient.m */; };
+		9DE7DDB91B805E1600DF5CC7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7DDB81B805E1600DF5CC7 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,21 @@
 		9DACFB591B803EC70091EEB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DACFB5B1B803EC70091EEB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DACFB5C1B803EC70091EEB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9DACFB5E1B803EC70091EEB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9DACFB5F1B803EC70091EEB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9DACFB621B803EC70091EEB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DACFB5E1B803EC70091EEB8 /* FriendListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendListController.h; sourceTree = "<group>"; };
+		9DACFB5F1B803EC70091EEB8 /* FriendListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendListController.m; sourceTree = "<group>"; };
 		9DACFB641B803EC70091EEB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9DACFB671B803EC70091EEB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9DACFB6D1B803EC70091EEB8 /* LassyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LassyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DACFB721B803EC70091EEB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DACFB731B803EC70091EEB8 /* LassyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LassyAppTests.m; sourceTree = "<group>"; };
+		9DACFB7D1B8042DC0091EEB8 /* FriendListDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListDataSourceDelegate.h; sourceTree = "<group>"; };
+		9DACFB7E1B8042DC0091EEB8 /* FriendListDataSourceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListDataSourceDelegate.m; sourceTree = "<group>"; };
+		9DACFB801B80460B0091EEB8 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		9DACFB811B80460B0091EEB8 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		9DACFB831B80481B0091EEB8 /* BackendClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackendClient.h; sourceTree = "<group>"; };
+		9DACFB841B80481B0091EEB8 /* BackendClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendClient.m; sourceTree = "<group>"; };
+		9DE7DDB71B805E1600DF5CC7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		9DE7DDB81B805E1600DF5CC7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +93,19 @@
 			children = (
 				9DACFB5B1B803EC70091EEB8 /* AppDelegate.h */,
 				9DACFB5C1B803EC70091EEB8 /* AppDelegate.m */,
-				9DACFB5E1B803EC70091EEB8 /* ViewController.h */,
-				9DACFB5F1B803EC70091EEB8 /* ViewController.m */,
-				9DACFB611B803EC70091EEB8 /* Main.storyboard */,
+				9DACFB5E1B803EC70091EEB8 /* FriendListController.h */,
+				9DACFB5F1B803EC70091EEB8 /* FriendListController.m */,
 				9DACFB641B803EC70091EEB8 /* Images.xcassets */,
 				9DACFB661B803EC70091EEB8 /* LaunchScreen.xib */,
 				9DACFB571B803EC70091EEB8 /* Supporting Files */,
+				9DACFB7D1B8042DC0091EEB8 /* FriendListDataSourceDelegate.h */,
+				9DACFB7E1B8042DC0091EEB8 /* FriendListDataSourceDelegate.m */,
+				9DACFB801B80460B0091EEB8 /* Friend.h */,
+				9DACFB811B80460B0091EEB8 /* Friend.m */,
+				9DACFB831B80481B0091EEB8 /* BackendClient.h */,
+				9DACFB841B80481B0091EEB8 /* BackendClient.m */,
+				9DE7DDB71B805E1600DF5CC7 /* User.h */,
+				9DE7DDB81B805E1600DF5CC7 /* User.m */,
 			);
 			path = LassyApp;
 			sourceTree = "<group>";
@@ -199,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DACFB631B803EC70091EEB8 /* Main.storyboard in Resources */,
 				9DACFB681B803EC70091EEB8 /* LaunchScreen.xib in Resources */,
 				9DACFB651B803EC70091EEB8 /* Images.xcassets in Resources */,
 			);
@@ -219,7 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DACFB601B803EC70091EEB8 /* ViewController.m in Sources */,
+				9DACFB601B803EC70091EEB8 /* FriendListController.m in Sources */,
+				9DE7DDB91B805E1600DF5CC7 /* User.m in Sources */,
+				9DACFB851B80481B0091EEB8 /* BackendClient.m in Sources */,
+				9DACFB821B80460B0091EEB8 /* Friend.m in Sources */,
+				9DACFB7F1B8042DC0091EEB8 /* FriendListDataSourceDelegate.m in Sources */,
 				9DACFB5D1B803EC70091EEB8 /* AppDelegate.m in Sources */,
 				9DACFB5A1B803EC70091EEB8 /* main.m in Sources */,
 			);
@@ -244,14 +264,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9DACFB611B803EC70091EEB8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DACFB621B803EC70091EEB8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9DACFB661B803EC70091EEB8 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -416,6 +428,7 @@
 				9DACFB791B803EC70091EEB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DACFB7A1B803EC70091EEB8 /* Build configuration list for PBXNativeTarget "LassyAppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				9DACFB7C1B803EC70091EEB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
