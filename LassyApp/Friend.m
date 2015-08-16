@@ -3,14 +3,14 @@
 @interface Friend ()
 
 @property (nonatomic) NSString *name;
-@property (nonatomic) NSString *points;
+@property (nonatomic) int points;
 @property (nonatomic) NSString *fid;
 
 @end
 
 @implementation Friend
 
-- (instancetype)initWithName:(NSString *) name andPoints:(NSString *) points andFacebookID:(NSString *)fid
+- (instancetype)initWithName:(NSString *) name andPoints:(int) points andFacebookID:(NSString *)fid
 {
     self = [super init];
     if (self) {

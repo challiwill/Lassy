@@ -38,14 +38,19 @@
     self.tableView.dataSource = self.tableViewDataSourceDelegate;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:friendCellIdentifier];
     
-    [self.backendClient fetchFriendsWithSuccessBlock:^void (NSArray *friends) {
-        [self.tableViewDataSourceDelegate configureWithFriends:friends];
-        [self.tableView reloadData];
-    }];
-
-    NSString *fid = @"7";
-    [self.backendClient fetchUserWithID:fid andWithSuccessBlock:^void (User *user) {
-        [self.tableViewDataSourceDelegate configureWithUser:user];
+//    [self.backendClient fetchFriendsWithSuccessBlock:^void (NSArray *friends) {
+//        [self.tableViewDataSourceDelegate configureWithFriends:friends];
+//        [self.tableView reloadData];
+//    }];
+//
+//    NSString *fid = @"7";
+//    [self.backendClient fetchUserWithID:fid andWithSuccessBlock:^void (User *user) {
+//        [self.tableViewDataSourceDelegate configureWithUser:user];
+//        [self.tableView reloadData];
+//    }];
+    [self.backendClient fetchAllWithSuccessBlock:^void (NSArray *allUsers) {
+        NSLog(@"configuring");
+        [self.tableViewDataSourceDelegate configureWithAll:allUsers];
         [self.tableView reloadData];
     }];
 

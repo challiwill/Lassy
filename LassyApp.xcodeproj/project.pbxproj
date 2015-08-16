@@ -17,6 +17,11 @@
 		9DACFB821B80460B0091EEB8 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB811B80460B0091EEB8 /* Friend.m */; };
 		9DACFB851B80481B0091EEB8 /* BackendClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DACFB841B80481B0091EEB8 /* BackendClient.m */; };
 		9DE7DDB91B805E1600DF5CC7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7DDB81B805E1600DF5CC7 /* User.m */; };
+		9DE7DDBC1B80909D00DF5CC7 /* FacebookClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7DDBB1B80909D00DF5CC7 /* FacebookClient.m */; };
+		9DE7DDC11B8094C100DF5CC7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE7DDBE1B8094C100DF5CC7 /* FBSDKCoreKit.framework */; };
+		9DE7DDC21B8094C100DF5CC7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE7DDBF1B8094C100DF5CC7 /* FBSDKLoginKit.framework */; };
+		9DE7DDC31B8094C100DF5CC7 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE7DDC01B8094C100DF5CC7 /* FBSDKShareKit.framework */; };
+		9DE7DDC61B80967D00DF5CC7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7DDC51B80967D00DF5CC7 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,13 @@
 		9DACFB841B80481B0091EEB8 /* BackendClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendClient.m; sourceTree = "<group>"; };
 		9DE7DDB71B805E1600DF5CC7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		9DE7DDB81B805E1600DF5CC7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		9DE7DDBA1B80909D00DF5CC7 /* FacebookClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookClient.h; sourceTree = "<group>"; };
+		9DE7DDBB1B80909D00DF5CC7 /* FacebookClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookClient.m; sourceTree = "<group>"; };
+		9DE7DDBE1B8094C100DF5CC7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "LassyApp.xcodeproj/../../FacebookSDKs-iOS-20150813/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		9DE7DDBF1B8094C100DF5CC7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "LassyApp.xcodeproj/../../FacebookSDKs-iOS-20150813/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		9DE7DDC01B8094C100DF5CC7 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "LassyApp.xcodeproj/../../FacebookSDKs-iOS-20150813/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		9DE7DDC41B80967D00DF5CC7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9DE7DDC51B80967D00DF5CC7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE7DDC21B8094C100DF5CC7 /* FBSDKLoginKit.framework in Frameworks */,
+				9DE7DDC11B8094C100DF5CC7 /* FBSDKCoreKit.framework in Frameworks */,
+				9DE7DDC31B8094C100DF5CC7 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 		9DACFB4B1B803EC70091EEB8 = {
 			isa = PBXGroup;
 			children = (
+				9DE7DDBD1B8094B600DF5CC7 /* Frameworks */,
 				9DACFB561B803EC70091EEB8 /* LassyApp */,
 				9DACFB701B803EC70091EEB8 /* LassyAppTests */,
 				9DACFB551B803EC70091EEB8 /* Products */,
@@ -93,6 +109,8 @@
 			children = (
 				9DACFB5B1B803EC70091EEB8 /* AppDelegate.h */,
 				9DACFB5C1B803EC70091EEB8 /* AppDelegate.m */,
+				9DE7DDC41B80967D00DF5CC7 /* LoginViewController.h */,
+				9DE7DDC51B80967D00DF5CC7 /* LoginViewController.m */,
 				9DACFB5E1B803EC70091EEB8 /* FriendListController.h */,
 				9DACFB5F1B803EC70091EEB8 /* FriendListController.m */,
 				9DACFB641B803EC70091EEB8 /* Images.xcassets */,
@@ -106,6 +124,8 @@
 				9DACFB841B80481B0091EEB8 /* BackendClient.m */,
 				9DE7DDB71B805E1600DF5CC7 /* User.h */,
 				9DE7DDB81B805E1600DF5CC7 /* User.m */,
+				9DE7DDBA1B80909D00DF5CC7 /* FacebookClient.h */,
+				9DE7DDBB1B80909D00DF5CC7 /* FacebookClient.m */,
 			);
 			path = LassyApp;
 			sourceTree = "<group>";
@@ -134,6 +154,16 @@
 				9DACFB721B803EC70091EEB8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DE7DDBD1B8094B600DF5CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7DDBE1B8094C100DF5CC7 /* FBSDKCoreKit.framework */,
+				9DE7DDBF1B8094C100DF5CC7 /* FBSDKLoginKit.framework */,
+				9DE7DDC01B8094C100DF5CC7 /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +269,8 @@
 				9DE7DDB91B805E1600DF5CC7 /* User.m in Sources */,
 				9DACFB851B80481B0091EEB8 /* BackendClient.m in Sources */,
 				9DACFB821B80460B0091EEB8 /* Friend.m in Sources */,
+				9DE7DDBC1B80909D00DF5CC7 /* FacebookClient.m in Sources */,
+				9DE7DDC61B80967D00DF5CC7 /* LoginViewController.m in Sources */,
 				9DACFB7F1B8042DC0091EEB8 /* FriendListDataSourceDelegate.m in Sources */,
 				9DACFB5D1B803EC70091EEB8 /* AppDelegate.m in Sources */,
 				9DACFB5A1B803EC70091EEB8 /* main.m in Sources */,
@@ -359,6 +391,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/corbin/Documents/Projects/FacebookSDKs-iOS-20150813",
+				);
 				INFOPLIST_FILE = LassyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +405,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/corbin/Documents/Projects/FacebookSDKs-iOS-20150813",
+				);
 				INFOPLIST_FILE = LassyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

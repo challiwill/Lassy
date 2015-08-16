@@ -2,6 +2,10 @@
 #import "AppDelegate.h"
 #import "FriendListController.h"
 #import "BackendClient.h"
+#import "LoginViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface AppDelegate ()
 
@@ -9,16 +13,29 @@
 
 @implementation AppDelegate
 
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [FBSDKAppEvents activateApp];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     
-    BackendClient *backendClient = [[BackendClient alloc] initWithURLSession:[NSURLSession sharedSession] andOperationQueue:[NSOperationQueue mainQueue]];
-    self.window.rootViewController = [[FriendListController alloc] initWithBackendClient:backendClient];
-   
+    self.window.rootViewController = [[LoginViewController alloc] init];
+    
     [self.window makeKeyAndVisible];
     
-    return YES;
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                    didFinishLaunchingWithOptions:launchOptions];
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                sourceApplication:sourceApplication
+                                                       annotation:annotation];
 }
 
 @end
