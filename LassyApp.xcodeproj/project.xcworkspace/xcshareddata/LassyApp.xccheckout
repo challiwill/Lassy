@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E56C3F80-629A-40CC-ADDC-611079DAFD27</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LassyApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E0C2C8617B1BD359010BBAA1F1BE62AC9AE4080D</key>
+		<string>github.com:challiwill/LassyApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LassyApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E0C2C8617B1BD359010BBAA1F1BE62AC9AE4080D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:challiwill/LassyApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E0C2C8617B1BD359010BBAA1F1BE62AC9AE4080D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E0C2C8617B1BD359010BBAA1F1BE62AC9AE4080D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LassyApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

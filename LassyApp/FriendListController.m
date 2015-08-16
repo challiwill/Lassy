@@ -40,7 +40,7 @@
 
     UILabel *rankLbl = [[UILabel alloc] initWithFrame:CGRectMake(100, 30, 400, 50)];
     rankLbl.text = @"HOW YOU COMPARE";
-    rankLbl.font = [UIFont systemFontOfSize:25.0 weight:3.0];
+    rankLbl.font = [UIFont systemFontOfSize:20.0 weight:3.0];
     rankLbl.textColor = [UIColor colorWithRed:2.0 green:2.0 blue:1.9 alpha:1];
     [self.view addSubview:rankLbl];
 

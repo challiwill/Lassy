@@ -46,7 +46,7 @@ NSString *const friendCellIdentifier = @"friendCellIdentifier";
     
     UILabel *nameLbl = [[UILabel alloc] initWithFrame:CGRectMake(50,
                                                                  5,
-                                                                 200,
+                                                                 175,
                                                                  cell.frame.size.height-10)];
     nameLbl.text = friend.name;
     nameLbl.font = [UIFont systemFontOfSize:15.0 weight:2.0];
