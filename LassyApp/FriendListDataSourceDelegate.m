@@ -60,12 +60,12 @@ NSString *const friendCellIdentifier = @"friendCellIdentifier";
 
     if (index == 7) {
         cell.backgroundColor = [UIColor colorWithRed:150.0/255.0 green:190.0/255.0 blue:200.0/255.0 alpha:1];
-        rankLbl.frame = CGRectMake(-cell.frame.size.height/3, 5, cell.frame.size.height, cell.frame.size.height);
+        rankLbl.frame = CGRectMake(-cell.frame.size.height/3, 0, cell.frame.size.height, cell.frame.size.height);
         rankLbl.backgroundColor = [UIColor whiteColor];
         rankLbl.layer.cornerRadius = rankLbl.frame.size.width/2;
         rankLbl.clipsToBounds = YES;
-        rankLbl.text = [NSString stringWithFormat:@"%ld \t", index+1];
-        rankLbl.textAlignment = NSTextAlignmentRight;
+        rankLbl.text = [NSString stringWithFormat:@"  %ld", index+1];
+        rankLbl.textAlignment = NSTextAlignmentCenter;
         rankLbl.font = [UIFont systemFontOfSize:20.0];
         nameLbl.textColor = [UIColor whiteColor];
         nameLbl.font = [UIFont systemFontOfSize:20.0 weight:2.0];
